@@ -1,0 +1,17 @@
+
+@GET、@POST、@PUT、@DELETE、@HEAD
+   @GET、@POST、@PUT、@DELETE 以及 @HEAD 均是 HTTP 请求方法指示符注释。
+   您可以使用它们来绑定根资源或子资源内的 Java 方法与 HTTP 请求方法。
+   HTTP GET 请求被映射到由 @GET 注释的方法；HTTP POST 请求被映射到由 
+   @POST 注释的方法，以此类推。
+
+
+   
+@Conumes 和 @Produces
+   @Conumes注释代表的是一个资源可以接受的MIME类型。
+   @Produces注释代表的是一个资源可以返回的MIME类型。
+
+   
+@Path
+   @Path注释被用来描述根资源、子资源方法或子资源位置。
+   value值可以包含文本字符、变量或具有定制正则表达式的变量。

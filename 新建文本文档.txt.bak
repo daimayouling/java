@@ -1,0 +1,126 @@
+//a开头的函数
+	ABS(X):ABS()函数返回X的绝对值	例SELECT ABS(-2) #2
+	ACOS(X):计算一个角的反余弦值，以弧度表示
+	ADDDATE(date,INTERVAL expr unit)	//例SELECT ADDDATE('2018-11-5',INTERVAL 90 day) #2019-02-03
+	ADDDATE(expr,days)			//例SELECT ADDDATE('2018-11-5',90) #2019-02-03	
+	ADDTIME(expr1,expr2)			//例SELECT ADDTIME( '00:12:00' ,'00:12:00') #00:24:00
+	AES_DECRYPT(crypt_str,key_str)		//例(加密)INSERT INTO bigdata (name,age) VALUES ('b',HEX(AES_ENCRYPT('1234','password')))
+	AES_ENCRYPT(str,key_str)		//例(解密)SELECT id,name,AES_DECRYPT(UNHEX(age),'password') FROM bigdata 
+	ASCII(str)			//例SELECT ASCII('a') #97
+	ASIN(X)	:ASIN()函数返回X的反正弦，X的值必须在-1到1的范围内，否则返回NULL。			//例
+	ATAN(X):此函数返回X的反正切值
+	ATAN(Y,X)		//例
+	ATAN2(Y,X)		//例该函数返回两个参数：X和Y的反正切，它类似于Y / X的反正切，所不同的是两者的符号被用来查找象限的结果。
+	AVG([DISTINCT] expr):用来找出一个字段的各种记录平均值	//例SELECT AVG(age) FROM bigdata
+
+//a开头的关键字
+	ACCESSIBLE
+	ADD
+	AFTER
+	AGAINST
+	AGGREGATE
+	ALTER
+	ALGORITHM
+	ALL
+	AND
+	ANALYZE
+	ANY
+	AS
+	ASC
+	ASENSITIVE
+	AT
+	AUTHORS
+
+
+//b开头的函数
+	BENCHMARK(count,expr):BENCHMARK()函数反复countTimes次执行表白式expr，它可以用于计时MySQL处置抒发式有多快
+	BIT_AND(expr):二进制数按位与
+	BIT_OR(expr):二进制数按位或,就是对两个二进制数进行或运算
+	BIT_XOR(expr):预定义在参数上执行二进制和运算(二进制operator^)的函数对象。
+	BIN(N):将10进制转换为2进制,其中N是一个长整型(BIGINT)数。
+	BIT_COUNT(N):用来计算二进制数中包含1的个数。select BIT_COUNT(10);因为10转成二进制是1010，所以该结果就是2。
+	BIT_LENGTH(str):查询二进制的位数或长度啥。
+
+//b开头的关键字
+	BACKUP
+	BDB
+	BEGIN
+	BEFORE
+	BETWEEN
+	BIGINT
+	BINARY
+	BINLOG
+	BLOB
+	BOTH
+	BTREE
+	BY
+
+//c开头的函数
+	CAST(expr AS type)
+	CEIL(X)
+	CEILING(X)
+	`CHAR`(N,... [USING charset_name])
+	CHARACTER_LENGTH(str)
+	CHARSET(str)
+	CHAR_LENGTH()
+	COUNT(DISTINCT expr,[expr...])
+	COUNT(expr)
+	`COALESCE`(value,...)
+	COERCIBILITY(str)
+	`COLLATION`(str)
+	COMPRESS(string_to_compress)
+	CONCAT(str1,str2,...)
+	CONCAT_WS(separator,str1,str2,...)
+	CONNECTION_ID()
+	CONV(N,from_base,to_base)
+	`CONVERT`(expr USING transcoding_name)
+	`CONVERT`(expr,type)
+	CONVERT_TZ(dt,from_tz,to_tz)
+	COS(X)
+	COT(X)
+	CRC32(expr)
+	CURDATE()
+	`CURRENT_DATE`()
+	`CURRENT_TIME`()
+	`CURRENT_TIMESTAMP`()
+	`CURRENT_USER`()
+	CURTIME()
+
+//c开头的关键字
+	CACHE
+	CALL
+	CASCADE
+	CASCADED
+	CASE
+	CHAIN
+	CHANGE
+	CHANGED
+	CHAR
+	CHARACTER
+	CHECK
+	CHECKSUM
+	CIPHER
+	CLOSE
+	COMMIT
+	COALESCE
+	CODE
+	COLLATE
+	COLLATION
+	COLUMN
+	COLUMNS
+	COMMENT
+	COMMITTED
+	COMPLETION
+	CONSISTENT
+	CONSTRAINT
+	CONTAINS
+	CONTINUE
+	CONTRIBUTORS
+	CONVERT
+	CREATE
+	CROSS
+	CURRENT_DATE
+	CURRENT_TIME
+	CURRENT_TIMESTAMP
+	CURRENT_USER
+	CURSOR
