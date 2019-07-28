@@ -2,7 +2,7 @@
 2.删除远程分支:git push origin --delete <远程分支名称>
 3.删除本地分支:git branch -d <本地分支>
 
-
+---------------------将本地仓库推送到远端-----------------------------------------
 1. 先在github上创建一个项目：例如 vue-demo
 2. 在本地vue-demo 项目中使用 git init 把其变成git可以管理的仓库
 git init
@@ -33,3 +33,4 @@ git pull --rebase origin master
 7. 把本地内容推送到远程库 使用 git-push
 git push -u origin master
 
+---------------------生成git的ssh------------------------
